@@ -83,7 +83,7 @@ static const char *brightnessup[] = { "xbacklight", "-inc", "5", NULL };
 static const char *brightnessdown[] = { "xbacklight", "-dec", "5", NULL };
 /* other commands */
 static const char *print[]  = { "screenshot", NULL };
-//static const char *quitcmd[]  = { "powermenu", NULL };
+static const char *powermenu[]  = { "powermenu", NULL };
 static const char *web[]  = { "web", NULL };
 static const char *touchpad[]  = { "touchpad", NULL };
 static const char *yankmenu[]  = { "clipmenu", NULL };
@@ -122,8 +122,8 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
-	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
-	//{ MODKEY|ShiftMask,             XK_q,      spawn,          {.v = quitcmd} },
+	{ MODKEY|ShiftMask,             XK_r,      quit,           {0} },
+	{ MODKEY|ShiftMask,             XK_q,      spawn,          {.v = powermenu} },
     /* volume key bind */
     { 0,                            XF86XK_AudioLowerVolume,  spawn,          {.v = downvol } },
     { 0,                            XF86XK_AudioMute,         spawn,          {.v = mutevol } },
