@@ -5,7 +5,7 @@
 set -e
 
 # Variables
-urls_file=$HOME/.local/bookmarks.csv
+urls_file=$HOME/.cache/bookmarks.csv
 lines=$(cat $urls_file | wc -l)
 browser=librewolf
 
