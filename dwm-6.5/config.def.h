@@ -84,7 +84,7 @@ static const char *brightnessdown[] = { "xbacklight", "-dec", "5", NULL };
 /* other commands */
 static const char *print[]  = { "screenshot", NULL };
 static const char *powermenu[]  = { "powermenu", NULL };
-static const char *web[]  = { "web", NULL };
+static const char *bookmark[]  = { "bookmark", NULL };
 static const char *touchpad[]  = { "touchpad", NULL };
 static const char *yankmenu[]  = { "clipmenu", NULL };
 
@@ -138,7 +138,7 @@ static const Key keys[] = {
     /* screenshot keybind */
     { 0,                            XK_Print, spawn,          {.v = print   } },
     /* Others */
-	{ MODKEY,                       XK_w,      spawn,          {.v = web } },
+	{ MODKEY,                       XK_w,      spawn,          {.v = bookmark } },
 	{ MODKEY,                       XK_s,      spawn,          {.v = touchpad } },
 	{ MODKEY,                       XK_y,      spawn,          {.v = yankmenu } },
 };
