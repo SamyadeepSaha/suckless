@@ -24,6 +24,7 @@ static const char *colors[][3]      = {
 static const char *const autostart[] = {
 	"slstatus", NULL,
 	"clipmenud", NULL,
+	"transmission-daemon", NULL,
 	"touchpad", NULL,
 	"unclutter", NULL,
 	NULL /* terminate */
