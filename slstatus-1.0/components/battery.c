@@ -73,7 +73,7 @@
 			if (!strcmp(map[i].state, state))
 				break;
 
-		return (i == LEN(map)) ? "?" : map[i].symbol;
+		return (i == LEN(map)) ? "?" : map[i].state;
 	}
 
 	const char *
