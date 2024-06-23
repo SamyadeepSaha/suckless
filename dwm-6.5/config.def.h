@@ -24,7 +24,7 @@ static const char *colors[][3]      = {
 static const char *const autostart[] = {
 	"slstatus", NULL,
 	"clipmenud", NULL,
-	"transmission-daemon", NULL,
+	//"transmission-daemon", NULL,
 	"touchpad", NULL,
 	"unclutter", NULL,
 	NULL /* terminate */
@@ -76,9 +76,9 @@ static const char *upvol[]   = { "pamixer", "--increase", "1", NULL };
 static const char *downvol[] = { "pamixer", "--decrease", "1", NULL };
 static const char *mutevol[] = { "pamixer", "--toggle-mute", NULL };
 /* media commands */
-static const char *mplaypause[] = { "playerctl", "play-pause", NULL };
-static const char *mnext[] = { "playerctl", "next", NULL };
-static const char *mprev[] = { "playerctl", "previous", NULL };
+static const char *mplaypause[] = { "playerctl", "--all-players", "play-pause", NULL };
+static const char *mnext[] = { "playerctl", "--all-players", "next", NULL };
+static const char *mprev[] = { "playerctl", "--all-players", "previous", NULL };
 /* brightness commands */
 static const char *brightnessup[] = { "xbacklight", "-inc", "5", NULL };
 static const char *brightnessdown[] = { "xbacklight", "-dec", "5", NULL };
